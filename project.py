@@ -12,13 +12,12 @@ for i in range(len(object)):
             count += 1
     list_for_elements.append(object[i])
     dictionary[object[i]] = count
-for key , value in  dictionary.items():
-    print(f" element {key} found {value} times")
 print(pyfiglet.figlet_format("*" * 10))
 sorted_dictionary = (sorted(dictionary.items() , key = lambda x : x[1], reverse= True))
 most_reppeated = sorted_dictionary[:n]
 for key , value in most_reppeated:
     print(f"{key} : {value}")
+print(pyfiglet.figlet_format("*" * 10))
 
 
 # This is much more better idea to perform the same task faster and easier by using the library colloctions
